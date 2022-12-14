@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Sepetim"
+    android:background="#E8C5D1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="SEPETİM"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewSepetim"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_local_grocery_store_24"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/textViewNot"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Sepetinizde ürün bulunmamaktadır. Alışverişe devam etmek ister misiniz?"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/buttonAlisveriseDevamEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ALIŞVERİŞE DEVAM ET"
+            android:layout_margin="5dp"/>
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_background"
+            android:id="@+id/layouttoplamtutar"
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/toplamtutaryazi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Toplam Tutar:"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/toplamtutaryazi"
+                android:id="@+id/toplamtutar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000 TL"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/btnsepetionayla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Sepeti Onayla"
+                android:layout_marginRight="5dp"/>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSepetim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:itemCount="1"
+            tools:listitem="@layout/list_item_sepetim" />
+
+    </LinearLayout>
+
+</LinearLayout>

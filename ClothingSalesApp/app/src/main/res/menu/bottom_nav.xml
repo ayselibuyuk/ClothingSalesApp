@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Ana Sayfa"
+        android:id="@+id/anasayfa"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item android:title="Favorilerim"
+        android:id="@+id/favorilerim"
+        android:icon="@drawable/ic_baseline_favorite_24"/>
+    <item android:title="Sepetim"
+        android:id="@+id/sepetim"
+        android:icon="@drawable/ic_baseline_local_grocery_store_24"/>
+    <item android:title="Ayarlar"
+        android:id="@+id/ayarlar"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+    <item android:title="Oturumu Kapat"
+        android:id="@+id/cikisyap"
+        android:icon="@drawable/cikis"/>
+
+</menu>

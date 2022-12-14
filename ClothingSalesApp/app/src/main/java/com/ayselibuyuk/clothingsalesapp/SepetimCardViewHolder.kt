@@ -1,0 +1,5 @@
+package com.ayselibuyuk.clothingsalesapp
+
+import androidx.recyclerview.widget.RecyclerView
+import com.ayselibuyuk.clothingsalesapp.databinding.ListItemFavorilerBinding
+
